@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://sarahprando.github.io/forest/src/img/favicon.png" type="image/png" />
+    <title>Домик-баня | Отдых на природе, домики и сибирский чан</title>
+    <meta name="description" content="Домик-баня — загородный отдых, аренда домиков, сибирский чан и русская баня в Тверь, ул. Исаевская Слобода, 32." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              verde: {
+                200: '#ACEF75',
+                300: '#91EE77',
+                700: '#1b3b2b',
+                800: '#16281F',
+                900: '#0F1914',
+                950: '#080d0a',
+              }
+            },
+            fontFamily: {
+              serif: ['"DM Serif Text"', 'serif'],
+              sans: ['"DM Sans"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .neon {
+        box-shadow: 0 0 15px rgba(172, 239, 117, 0.4);
+      }
+      .radial-gradient {
+        background: radial-gradient(circle at 50% 0%, rgba(27, 59, 43, 0.4) 0%, rgba(8, 13, 10, 0) 70%);
+      }
+    </style>
+  </head>
+  <body class="bg-verde-950 font-sans text-stone-200 antialiased selection:bg-verde-200 selection:text-verde-950">
+
+    <!-- Хедер сайта -->
+    <header class="container mx-auto px-4 py-6 flex items-center justify-between border-b border-verde-800/40">
+      <div class="flex items-center gap-3">
+        <span class="inline-block size-3 rounded-full bg-verde-200 neon"></span>
+        <span class="font-serif text-xl sm:text-2xl text-white tracking-wide">Домик-баня</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-stone-300">
+        <a href="#about" class="hover:text-verde-200 transition">О комплексе</a>
+        <a href="#houses" class="hover:text-verde-200 transition">Домики и чан</a>
+        <a href="#prices" class="hover:text-verde-200 transition">Цены</a>
+        <a href="#contacts" class="hover:text-verde-200 transition">Контакты</a>
+      </nav>
+      <a
+        href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+        target="_blank"
+        class="inline-flex items-center gap-2 bg-verde-200 text-verde-950 px-5 py-2.5 rounded-full font-semibold text-sm hover:brightness-110 shadow-lg hover:shadow-verde-200/20 transition transform hover:-translate-y-0.5"
+      >
+        <span>WhatsApp</span>
+        <svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.124-.516-1.83-1.012-3.007-2.884-3.099-3.004-.093-.125-.747-.988-.747-1.884 0-.895.467-1.336.634-1.517.166-.182.364-.227.485-.227.122 0 .243.001.349.006.112.006.262-.043.41.312.152.364.517 1.258.562 1.35.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.258.696.62 1.282.812 1.464.903.182.091.289.076.395-.045.106-.122.456-.531.577-.714.122-.182.243-.152.41-.091.167.061 1.059.499 1.241.59.182.091.303.136.349.213.045.076.045.439-.099.844z"/></svg>
+      </a>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <main class="container mx-auto px-4 pt-12 pb-20">
+      <div class="relative rounded-3xl overflow-hidden border border-verde-800/60 p-8 sm:p-16 lg:p-20 bg-gradient-to-t from-verde-950 via-verde-950/80 to-transparent min-h-[580px] flex flex-col justify-end">
+        <!-- Фоновое изображение -->
+        <img
+          src="assets/images/photo_1.jpg"
+          alt="Домик-баня"
+          class="absolute inset-0 size-full object-cover -z-10 brightness-[0.45] scale-105 hover:scale-100 transition duration-1000"
+        />
+
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2.5 bg-verde-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-verde-700/30 text-xs sm:text-sm text-verde-200 mb-6">
+            <span class="size-2 rounded-full bg-verde-200 animate-pulse"></span>
+            <span>🌿 Бронирование на выходные открыто • Тверь</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            Домик-баня
+          </h1>
+
+          <p class="text-stone-300 text-lg sm:text-xl mb-8 leading-relaxed max-w-2xl">
+            Уютные дизайнерские домики среди вековых сосен, сибирский банный чан под звёздным небом и русская парная для полного перезапуска.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 text-sm sm:text-base">
+            <a
+              href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+              target="_blank"
+              class="bg-verde-200 text-verde-950 px-8 py-4 rounded-full font-bold text-base hover:brightness-110 shadow-xl hover:shadow-verde-200/30 transition transform hover:-translate-y-0.5 inline-flex items-center gap-2"
+            >
+              <span>Забронировать отдых</span>
+              <span>→</span>
+            </a>
+            <div class="bg-verde-900/70 backdrop-blur-md px-5 py-3.5 rounded-full border border-verde-700/40 text-stone-200 flex items-center gap-2">
+              <span class="text-yellow-400 font-bold">★ 4.7</span>
+              <span class="text-stone-500">•</span>
+              <span>15 отзывов на картах</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between text-xs sm:text-sm text-stone-400 gap-4">
+          <div class="flex items-center gap-2">
+            <span>📍</span>
+            <span>Тверь, ул. Исаевская Слобода, 32</span>
+          </div>
+          <div class="flex items-center gap-6">
+            
+              <span>🏡 Домики: <strong class="text-white">от 7 500 ₽/сут</strong></span>
+              <span>🪵 Чан: <strong class="text-white">4 000 ₽ / растопка</strong></span>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Секция Удобства и Размещение (Houses & Services) -->
+    <section id="houses" class="radial-gradient py-16 border-t border-verde-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-verde-200 uppercase tracking-widest text-xs font-bold mb-3">Природный уют и комфорт</p>
+          <h2 class="font-serif text-3xl sm:text-5xl text-white">Всё для безупречного загородного отдыха</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+          
+            <!-- Карточка 1: Проживание -->
+            <div class="bg-verde-900/60 rounded-2xl overflow-hidden border border-verde-800/60 flex flex-col hover:border-verde-700 transition">
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="assets/images/photo_1.jpg"
+                  alt="Домик для отдыха"
+                  class="size-full object-cover hover:scale-105 transition duration-500"
+                />
+                <span class="absolute top-4 right-4 bg-verde-950/80 backdrop-blur-md text-verde-200 px-3.5 py-1.5 rounded-full text-xs font-semibold border border-verde-700/40">
+                  от 7 500 ₽/сут
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif text-2xl text-white mb-2">Уютные лесные домики</h3>
+                  <p class="text-stone-400 text-sm mb-4 leading-relaxed">
+                    Панорамное остекление с видом на лес, ортопедические матрасы, тёплые полы, мини-кухня и собственная мангальная зона.
+                  </p>
+                </div>
+                <ul class="text-xs text-stone-300 space-y-2 pt-4 border-t border-verde-800/40">
+                  <li class="flex items-center gap-2">✓ Панорамный вид на сосны</li>
+                  <li class="flex items-center gap-2">✓ Терраса и костровая зона</li>
+                  <li class="flex items-center gap-2">✓ Полная посуда и гриль-зона</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Карточка 2: Банный чан -->
+            <div class="bg-verde-900/60 rounded-2xl overflow-hidden border border-verde-800/60 flex flex-col hover:border-verde-700 transition">
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="assets/images/photo_2.jpg"
+                  alt="Сибирский банный чан"
+                  class="size-full object-cover hover:scale-105 transition duration-500"
+                />
+                <span class="absolute top-4 right-4 bg-verde-950/80 backdrop-blur-md text-verde-200 px-3.5 py-1.5 rounded-full text-xs font-semibold border border-verde-700/40">
+                  4 000 ₽ / растопка
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif text-2xl text-white mb-2">Сибирский чан на дровах</h3>
+                  <p class="text-stone-400 text-sm mb-4 leading-relaxed">
+                    Горячая купель под открытым небом (температура 40–42°C) с ветками пихты, цитрусами и полевыми травами.
+                  </p>
+                </div>
+                <ul class="text-xs text-stone-300 space-y-2 pt-4 border-t border-verde-800/40">
+                  <li class="flex items-center gap-2">✓ Натуральные пихтовые лапы</li>
+                  <li class="flex items-center gap-2">✓ Купание под звёздами</li>
+                  <li class="flex items-center gap-2">✓ Растопка к вашему заезду</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Карточка 3: Русская баня -->
+            <div class="bg-verde-900/60 rounded-2xl overflow-hidden border border-verde-800/60 flex flex-col hover:border-verde-700 transition">
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="assets/images/photo_3.jpg"
+                  alt="Русская баня"
+                  class="size-full object-cover hover:scale-105 transition duration-500"
+                />
+                <span class="absolute top-4 right-4 bg-verde-950/80 backdrop-blur-md text-verde-200 px-3.5 py-1.5 rounded-full text-xs font-semibold border border-verde-700/40">
+                  от 2 500 ₽/час
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif text-2xl text-white mb-2">Парная на берёзовых дровах</h3>
+                  <p class="text-stone-400 text-sm mb-4 leading-relaxed">
+                    Мягкий целебный мелкодисперсный пар, дубовые и березовые веники, купель и травяной чай с мёдом.
+                  </p>
+                </div>
+                <ul class="text-xs text-stone-300 space-y-2 pt-4 border-t border-verde-800/40">
+                  <li class="flex items-center gap-2">✓ Печь на берёзовых дровах</li>
+                  <li class="flex items-center gap-2">✓ Аромат алтайских трав</li>
+                  <li class="flex items-center gap-2">✓ Уютная комната отдыха</li>
+                </ul>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция Тарифы (Prices & Packages) -->
+    <section id="prices" class="py-20 bg-verde-900/40 border-t border-verde-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-verde-200 uppercase tracking-widest text-xs font-bold mb-3">Прозрачный прайс-лист</p>
+          <h2 class="font-serif text-3xl sm:text-5xl text-white">Услуги и стоимость</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          
+            <!-- Тариф 1 -->
+            <div class="bg-verde-900/80 rounded-3xl p-8 border border-verde-800 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-2xl text-white mb-2">Сутки в домике</h3>
+                <p class="text-xs text-stone-400 mb-6">Для пары или семьи с детьми</p>
+                <div class="mb-6">
+                  <span class="text-4xl font-serif text-white">от 7 500 ₽/сут</span>
+                </div>
+                <ul class="text-sm text-stone-300 space-y-3 mb-8">
+                  <li class="flex items-center gap-2">✓ Размещение до 4 гостей</li>
+                  <li class="flex items-center gap-2">✓ Мангальная зона и угли</li>
+                  <li class="flex items-center gap-2">✓ Постельное бельё и полотенца</li>
+                  <li class="flex items-center gap-2">✓ Высокоскоростной Wi-Fi</li>
+                </ul>
+              </div>
+              <a
+                href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+                target="_blank"
+                class="w-full text-center py-3.5 rounded-full border border-verde-300 text-verde-200 font-semibold text-sm hover:bg-verde-200 hover:text-verde-950 transition"
+              >
+                Забронировать
+              </a>
+            </div>
+
+            <!-- Тариф 2: Хит продаж -->
+            <div class="bg-verde-800 rounded-3xl p-8 border-2 border-verde-200 flex flex-col justify-between relative shadow-2xl shadow-verde-200/10 transform md:-translate-y-3">
+              <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde-200 text-verde-950 text-xs font-black uppercase px-4 py-1 rounded-full tracking-wider">
+                Выбор гостей
+              </span>
+              <div>
+                <h3 class="font-serif text-2xl text-white mb-2">Домик + Банный чан</h3>
+                <p class="text-xs text-verde-200 mb-6">Идеальный романтический уикенд</p>
+                <div class="mb-6">
+                  <span class="text-4xl font-serif text-white">Пакет «Релакс»</span>
+                  <p class="text-xs text-stone-400 mt-1">Домик + растопка чана с пихтой</p>
+                </div>
+                <ul class="text-sm text-stone-200 space-y-3 mb-8">
+                  <li class="flex items-center gap-2">✓ Сутки проживания в домике</li>
+                  <li class="flex items-center gap-2">✓ Горячий чан на 4 часа</li>
+                  <li class="flex items-center gap-2">✓ Пихтовые ветки и цитрусовый сбор</li>
+                  <li class="flex items-center gap-2">✓ Чайный сет из сибирских трав</li>
+                </ul>
+              </div>
+              <a
+                href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+                target="_blank"
+                class="w-full text-center py-3.5 rounded-full bg-verde-200 text-verde-950 font-bold text-sm hover:brightness-110 shadow-lg transition"
+              >
+                Забронировать пакет
+              </a>
+            </div>
+
+            <!-- Тариф 3 -->
+            <div class="bg-verde-900/80 rounded-3xl p-8 border border-verde-800 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-2xl text-white mb-2">Банный день</h3>
+                <p class="text-xs text-stone-400 mb-6">Аренда парной и чана без ночлега</p>
+                <div class="mb-6">
+                  <span class="text-4xl font-serif text-white">от 2 500 ₽/час</span>
+                </div>
+                <ul class="text-sm text-stone-300 space-y-3 mb-8">
+                  <li class="flex items-center gap-2">✓ Дровяная парная до 6 гостей</li>
+                  <li class="flex items-center gap-2">✓ Комната отдыха с самоваром</li>
+                  <li class="flex items-center gap-2">✓ 2 веника на выбор (дуб/береза)</li>
+                  <li class="flex items-center gap-2">✓ Обливное ведро и полотенца</li>
+                </ul>
+              </div>
+              <a
+                href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+                target="_blank"
+                class="w-full text-center py-3.5 rounded-full border border-verde-300 text-verde-200 font-semibold text-sm hover:bg-verde-200 hover:text-verde-950 transition"
+              >
+                Забронировать
+              </a>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фотогалерея -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="font-serif text-2xl sm:text-3xl text-white mb-8 text-center">Атмосфера отдыха</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <div class="h-60 rounded-xl overflow-hidden border border-verde-800/40">
+            <img src="assets/images/photo_1.jpg" alt="Домик-баня" class="size-full object-cover hover:scale-105 transition duration-500" />
+          </div>
+          
+          <div class="h-60 rounded-xl overflow-hidden border border-verde-800/40">
+            <img src="assets/images/photo_2.jpg" alt="Домик-баня" class="size-full object-cover hover:scale-105 transition duration-500" />
+          </div>
+          
+          <div class="h-60 rounded-xl overflow-hidden border border-verde-800/40">
+            <img src="assets/images/photo_3.jpg" alt="Домик-баня" class="size-full object-cover hover:scale-105 transition duration-500" />
+          </div>
+          
+          <div class="h-60 rounded-xl overflow-hidden border border-verde-800/40">
+            <img src="assets/images/photo_4.jpg" alt="Домик-баня" class="size-full object-cover hover:scale-105 transition duration-500" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция Контакты и Быстрое бронирование -->
+    <section id="contacts" class="py-20 border-t border-verde-900 bg-verde-950">
+      <div class="container mx-auto px-4 max-w-4xl text-center">
+        <span class="size-3 rounded-full bg-verde-200 inline-block neon mb-4"></span>
+        <h2 class="font-serif text-4xl sm:text-5xl text-white mb-6">Ждём вас в гости в Домик-баня</h2>
+        <p class="text-stone-300 text-lg mb-8 max-w-xl mx-auto">
+          Адрес: <strong class="text-white">Тверь, ул. Исаевская Слобода, 32</strong>.<br />
+          Отвечаем на сообщения в течение 5 минут. Напишите нам в WhatsApp, чтобы уточнить свободные даты:
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-4">
+          <a
+            href="https://wa.me/79105315665?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%94%D0%BE%D0%BC%D0%B8%D0%BA-%D0%B1%D0%B0%D0%BD%D1%8F"
+            target="_blank"
+            class="bg-verde-200 text-verde-950 px-10 py-5 rounded-full font-bold text-lg hover:brightness-110 shadow-2xl hover:shadow-verde-200/30 transition transform hover:-translate-y-1 inline-flex items-center gap-3"
+          >
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.124-.516-1.83-1.012-3.007-2.884-3.099-3.004-.093-.125-.747-.988-.747-1.884 0-.895.467-1.336.634-1.517.166-.182.364-.227.485-.227.122 0 .243.001.349.006.112.006.262-.043.41.312.152.364.517 1.258.562 1.35.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.258.696.62 1.282.812 1.464.903.182.091.289.076.395-.045.106-.122.456-.531.577-.714.122-.182.243-.152.41-.091.167.061 1.059.499 1.241.59.182.091.303.136.349.213.045.076.045.439-.099.844z"/></svg>
+            <span>Написать в WhatsApp</span>
+          </a>
+          <a
+            href="tel:+79105315665"
+            class="bg-verde-900 text-stone-200 px-8 py-5 rounded-full font-semibold border border-verde-700/60 hover:text-white hover:border-verde-300 transition"
+          >
+            Позвонить: +79105315665
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-8 border-t border-verde-900/60 text-center text-xs text-stone-500">
+      <div class="container mx-auto px-4">
+        <p>© 2026 Домик-баня. Все права защищены. Создано для загородного отдыха.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
